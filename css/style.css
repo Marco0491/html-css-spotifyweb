@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: calc(100vh - 80px);
+    display: flex;
+}
+
+main #left-nav {
+    width: 200px;
+    background-color: black;
+}
+
+main #main-content {
+    width: calc(100vw - 200px);
+    background-color: #141922;
+}
+
+footer {
+    height: 80px;
+    background-color: #282828;
+}
