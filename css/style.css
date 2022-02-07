@@ -10,6 +10,7 @@ body {
 
 main .container {
     height: calc(100vh - 80px);
+    color: #a3a3a3;
 }
 
 main #col-left {
@@ -39,9 +40,14 @@ main #col-right
 }
 
 main #col-right
+div.main-content {
+    padding: 1rem;
+}
+
+main #col-right
 div.main-content nav ul {
     text-align: center;
-    padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 main #col-right
@@ -62,6 +68,30 @@ main #col-right
 div.main-content nav li a:hover {
     color: white;
     border-bottom: 2px solid #adff2f;
+}
+
+main #col-right
+div.main-content h1, h4 {
+    color: white;
+}
+
+main #col-right
+div.main-content div.album {
+    display: inline-block;
+    width: calc(100% / 6);
+    text-align: center;
+    padding-right: 1rem;
+}
+
+main #col-right
+div.main-content div.album img {
+    width: 100%;
+    margin: 2rem 0 1rem;
+}
+
+main #col-right
+div.main-content div.album h4 {
+    margin-bottom: 0.5rem;
 }
 
 footer {
