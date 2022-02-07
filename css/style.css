@@ -4,40 +4,64 @@
     padding: 0;
 }
 
-main {
-    height: calc(100vh - 80px);
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
 main .container {
-    height: 100%;
+    height: calc(100vh - 80px);
 }
 
-main #left-nav {
+main #col-left {
     width: 200px;
     background-color: black;
 }
 
-main #main-content {
+main #col-right {
     width: calc(100vw - 200px);
     background-color: #141922;
 }
 
-main #main-content
+main #col-right
 #toolbar {
-    background-color: rgba(0,0,0,0.5);
-    padding: 1rem 1rem 3.5rem;
+    text-align: right;
+    background-color: rgba(0,0,0,0.4);
+    padding: 1rem;
 }
 
-main #main-content
-#toolbar .upgrade {
-    float: right;
-}
-
-main #main-content
-#toolbar a {
+a {
     text-decoration: none;
+}
+
+main #col-right
+#toolbar a {
     color: white;
+}
+
+main #col-right
+div.main-content nav ul {
+    text-align: center;
+    padding: 1rem;
+}
+
+main #col-right
+div.main-content nav li {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+main #col-right
+div.main-content nav li a {
+    color: #a3a3a3;
+}
+
+main #col-right
+div.main-content nav li a:hover {
+    color: white;
+    border-bottom: 2px solid #adff2f;
 }
 
 footer {
@@ -59,13 +83,12 @@ footer {
     text-transform: uppercase;
     font-size: 0.7rem;
     font-weight: 700;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.4);
     border: 1px solid white;
     border-radius: 1.5rem;
     padding: 0.8rem 2rem;
 }
 
 .btn:hover {
-    display: inline-block;
     transform: scale(1.1);
 }
