@@ -6,11 +6,11 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    color: #a3a3a3;
 }
 
-main .container {
+main {
     height: calc(100vh - 80px);
-    color: #a3a3a3;
 }
 
 main #col-left {
@@ -33,14 +33,12 @@ main #col-right
     padding: 1rem;
     position: sticky;
     top: 0;
-}
-
-a {
-    text-decoration: none;
+    z-index: 1;
 }
 
 main #col-right
-#toolbar a {
+a {
+    text-decoration: none;
     color: white;
 }
 
@@ -86,15 +84,38 @@ div.main-content h1 {
 
 main #col-right
 div.main-content div.album {
-    display: inline-block;
     width: calc(100% / 6);
     text-align: center;
     padding-right: 1rem;
 }
 
 main #col-right
-div.main-content div.album img {
+div.main-content div.album-pic {
+    position: relative;
+}
+
+main #col-right
+div.main-content div.album-pic img {
     width: 100%;
+}
+
+main #col-right
+div.main-content div.album-pic div.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+main #col-right
+div.main-content div.album-pic img:hover {
+    filter: opacity(0.5);
+}
+
+main #col-right
+div.main-content div.album-pic:hover div.play {
+    display: block;
 }
 
 main #col-right
@@ -102,13 +123,46 @@ div.main-content div.album h4 {
     margin: 1rem 0 0.5rem;
 }
 
-footer {
+footer#player {
     height: 80px;
+    color: white;
     background-color: #282828;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+footer#player
+div.player-album,div.player-music,div.player-audio {
+    align-items: center;
+}
+
+footer#player
+div.player-album, div.player-audio {
+    width: 25%;
+}
+
+footer#player
+div.player-album img {
+    height: 100%;
+}
+
+footer#player
+div.player-music {
+    width: 50%;
+    justify-content: center;
+}
+
+footer#player
+div.player-audio {
+    justify-content: flex-end;
 }
 
 .flex {
     display: flex;
+}
+
+.float {
+    float: left;
 }
 
 .clearfix::after {
