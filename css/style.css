@@ -25,6 +25,17 @@ main {
 main #col-left {
     width: 200px;
     background-color: black;
+    padding: 1rem;
+}
+
+main #col-left
+img {
+    width: 85%;
+}
+
+main #col-left
+.container {
+    flex-direction: column;
 }
 
 main #col-right {
