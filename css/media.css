@@ -1,0 +1,7 @@
+    /* media query for large screen */
+@media screen and (max-width: 992px) {
+    main #col-right
+    div.main-content div.album {
+        width: calc(100% / 4);
+    }
+}

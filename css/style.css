@@ -98,18 +98,18 @@ main #col-right
     z-index: 1;
 }
 
-main #col-right
-div.main-content {
+main #col-right div.main-content {
     padding: 1rem;
+
 }
 
-main #col-right
-div.main-content nav ul {
+main #col-right div.main-content
+nav ul {
     text-align: center;
 }
 
-main #col-right
-div.main-content nav li {
+main #col-right div.main-content
+nav li {
     display: inline;
     text-transform: uppercase;
     font-size: 0.8rem;
@@ -117,41 +117,46 @@ div.main-content nav li {
     padding: 1rem;
 }
 
-main #col-right
-div.main-content nav li a {
+main #col-right div.main-content
+nav li a {
     color: #a3a3a3;
 }
 
-main #col-right
-div.main-content nav li a:hover {
+main #col-right div.main-content
+nav li a:hover {
     color: white;
     border-bottom: 2px solid #adff2f;
 }
 
-main #col-right
-div.main-content h1 {
+main #col-right div.main-content
+h1 {
     margin: 2rem 0;
 }
 
-main #col-right
-div.main-content div.album {
+main #col-right div.main-content
+div.album-row {
+    flex-wrap: wrap;
+}
+
+main #col-right div.main-content
+div.album {
     width: calc(100% / 6);
     text-align: center;
     padding-right: 1rem;
 }
 
-main #col-right
-div.main-content div.album-pic {
+main #col-right div.main-content
+div.album-pic {
     position: relative;
 }
 
-main #col-right
-div.main-content div.album-pic img {
+main #col-right div.main-content
+div.album-pic img {
     width: 100%;
 }
 
-main #col-right
-div.main-content div.album-pic div.play {
+main #col-right div.main-content
+div.album-pic div.play {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -159,18 +164,18 @@ div.main-content div.album-pic div.play {
     display: none;
 }
 
-main #col-right
-div.main-content div.album-pic img:hover {
+main #col-right div.main-content
+div.album-pic img:hover {
     filter: opacity(0.5);
 }
 
-main #col-right
-div.main-content div.album-pic:hover div.play {
+main #col-right div.main-content
+div.album-pic:hover div.play {
     display: block;
 }
 
-main #col-right
-div.main-content div.album h4 {
+main #col-right div.main-content
+div.album h4 {
     margin: 1rem 0 0.5rem;
 }
 
