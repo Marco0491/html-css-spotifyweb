@@ -25,7 +25,7 @@ main {
 main #col-left {
     width: 200px;
     background-color: black;
-    padding: 1rem;
+    padding-top: 1rem;
 }
 
 main #col-left div.col-left-content {
@@ -40,6 +40,7 @@ img.logo-small {
 main #col-left div.col-left-content
 img.logo {
     width: 85%;
+    padding-left: 1rem;
 }
 
 main #col-left div.col-left-content
@@ -57,6 +58,7 @@ a,li {
 main #col-left div.col-left-content
 a i {
     font-size: 2rem;
+    padding-left: 1rem;
 }
 
 main #col-left
@@ -64,20 +66,27 @@ a:hover,li:hover {
     color: white;
 }
 
+main #col-left div.container
+a:hover {
+    border-left: 3px solid #adff2f;
+}
+
 main #col-left div.col-left-content
 h4 {
     text-transform: uppercase;
     margin-top: 0.5rem;
+    padding-left: 1rem;
 }
 
 main #col-left div.col-left-content
-nav {
-    overflow: auto;
-    position: relative
+nav ul {
+    list-style: none;
+    padding-left: 1rem;
 }
 
 main #col-left div.user {
     height: 50px;
+    padding: 0 1rem;
 }
 
 main #col-left div.user
@@ -278,6 +287,17 @@ div.bar-progress {
     height: 100%;
     border-radius: 5px;
     background-color: #c0c0c0;
+    position: relative;
+}
+
+footer#player
+div.bar-progress i.fa-circle {
+    display: none;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 }
 
 footer#player
@@ -286,8 +306,18 @@ div.bar-progress:hover {
 }
 
 footer#player
+div.bar-progress:hover i.fa-circle {
+    display: block;
+}
+
+footer#player
 div.player-audio {
     justify-content: flex-end;
+}
+
+footer#player
+div.player-audio-btn i {
+    margin-right: 1rem;
 }
 
 footer#player
@@ -296,8 +326,8 @@ div.player-audio-bar {
 }
 
 footer#player
-div.player-audio-btn i {
-    margin-right: 1rem;
+div.player-audio-bar div.bar-progress {
+    width: 75%;
 }
 
 .flex {
