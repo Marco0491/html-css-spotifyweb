@@ -28,14 +28,56 @@ main #col-left {
     padding: 1rem;
 }
 
-main #col-left
+main #col-left div.col-left-content {
+    height: calc(100% - 50px);
+}
+
+main #col-left div.col-left-content
 img {
     width: 85%;
 }
 
-main #col-left
+main #col-left div.col-left-content
 .container {
     flex-direction: column;
+}
+
+main #col-left
+a,li {
+    color: #a3a3a3;
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+
+main #col-left div.col-left-content
+a i {
+    font-size: 2rem;
+}
+
+main #col-left
+a:hover,li:hover {
+    color: white;
+}
+
+main #col-left div.col-left-content
+h4 {
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+}
+
+main #col-left div.col-left-content
+nav {
+    overflow: auto;
+    position: relative
+}
+
+main #col-left div.user {
+    height: 50px;
+}
+
+main #col-left div.user
+hr {
+    margin: 0.3rem 0;
 }
 
 main #col-right {
@@ -137,6 +179,7 @@ footer#player {
     background-color: #282828;
     justify-content: space-between;
     padding: 0.5rem;
+    position: relative;
 }
 
 footer#player
@@ -156,6 +199,11 @@ div.player-album img {
 }
 
 footer#player
+div.player-album a{
+    color: #a3a3a3;
+}
+
+footer#player
 div.player-album-title {
     flex-direction: column;
     margin-right: 1.5rem;
@@ -167,6 +215,12 @@ div.player-album-subtitle {
 }
 
 footer#player
+div.player-album-subtitle a:hover {
+    color: white;
+    border-bottom: 1px solid;
+}
+
+footer#player
 div.player-album-btn {
     gap: 35%;
 }
@@ -175,7 +229,6 @@ footer#player
 div.player-music {
     flex-basis: 50%;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 footer#player
@@ -215,6 +268,11 @@ div.bar-progress {
     height: 100%;
     border-radius: 5px;
     background-color: #c0c0c0;
+}
+
+footer#player
+div.bar-progress:hover {
+    background-color: #adff2f;
 }
 
 footer#player
