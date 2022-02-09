@@ -5,3 +5,26 @@
         width: calc(100% / 4);
     }
 }
+
+    /* media query for medium screen */
+@media screen and (max-width: 768px) {
+    main #col-right
+    div.main-content div.album {
+        width: calc(100% / 2);
+    }
+
+    footer#player
+    div.player-album-btn {
+        flex-direction: column;
+    }
+
+    footer#player
+    div.player-audio-btn {
+        flex-direction: column;
+    }
+
+    footer#player
+    div.player-audio-btn a:nth-child(2) {
+        order: 2;
+    }
+}
