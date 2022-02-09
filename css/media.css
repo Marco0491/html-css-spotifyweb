@@ -14,6 +14,11 @@
     }
 
     footer#player
+    div.player-album-title {
+        margin-right: 0.3rem;
+    }
+
+    footer#player
     div.player-album-btn {
         flex-direction: column;
     }
@@ -26,5 +31,62 @@
     footer#player
     div.player-audio-btn a:nth-child(2) {
         order: 2;
+    }
+}
+
+    /* media query for small screen */
+@media screen and (max-width: 576px) {
+    main #col-left {
+        width: 50px;
+    }
+
+    main #col-left div.col-left-content
+    img.logo-small {
+        display: inline-block;
+    }
+
+    main #col-left div.col-left-content
+    a i {
+        font-size: 1rem;
+    }
+
+    main #col-left div.user
+    a i {
+        font-size: 1rem;
+        padding-top: 0.5rem;
+    }
+
+    main #col-left
+    img.logo {
+        display: none;
+    }
+
+    main #col-left
+    span {
+        display: none;
+    }
+
+    main #col-left
+    h4 {
+        display: none;
+    }
+
+    main #col-left
+    nav {
+        display: none;
+    }
+
+    main #col-left
+    hr {
+        display: none;
+    }
+
+    main #col-right {
+        width: calc(100vw - 50px);
+    }
+
+    footer#player
+    div.player-album img {
+        width: 40px;
     }
 }

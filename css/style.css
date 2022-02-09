@@ -33,7 +33,12 @@ main #col-left div.col-left-content {
 }
 
 main #col-left div.col-left-content
-img {
+img.logo-small {
+    display: none;
+}
+
+main #col-left div.col-left-content
+img.logo {
     width: 85%;
 }
 
